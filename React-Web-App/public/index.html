@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script crossorigin src="../node_modules/react/umd/react.development.js"></script>
+    <script crossorigin src="/node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+       /*
+       // Upto React 17
+       ReactDOM.render(
+            "Welcome to React JS !!",
+            document.querySelector("p")
+        ) 
+            // Older version Technique. We use use also "text/jsx" instead of babel but bettwe to use babel.
+            // Backward compatible means Latest version of React will support older version features.
+          */
+         //React 18
+         const root = ReactDOM.createRoot(document.querySelector("p"));
+         root.render("Welcome To React !!!")
+         // using const here, it means initialization is mandatory and reassign is not possible.
+
+    </script>
+</head>
+<body>
+    <h2>Home - Using React</h2>
+    <p></p>
+    <a href="index.html">Back to Index</a>
+    
+</body>
+</html>
