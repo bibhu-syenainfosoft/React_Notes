@@ -1,0 +1,255 @@
+body {
+    background: url(./nflix.jpg) no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.backcolor {
+    margin-top: -1%;
+    background-image: radial-gradient(circle, rgba(29, 28, 28, 0.584), rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+}
+
+#ab:hover {
+    background-color: rgba(105, 102, 102, 0.18);
+}
+
+#cd:hover {
+    background-color: rgb(64, 64, 235);
+}
+
+#sec {
+    height: 31.7em;
+}
+
+#p1 {
+    line-height: 68px;
+}
+
+.title {
+    font-size: 3.8vw;
+    font-weight: 580;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1.5vw;
+
+}
+
+.headerContent {
+    padding: 1vw 7vw 1vw 5vw;
+}
+
+.banner {
+    height: 5vw;
+    width: 14vw;
+}
+
+.langBtn {
+    height: 2.1em;
+    width: 8em;
+}
+
+.signInBtn {
+    height: 2.1em;
+    width: 5em;
+}
+
+#content2 {
+    width: 100%;
+    height: 415px;
+    background-color: black;
+    border-bottom: 8px solid rgb(40, 39, 39);
+    color: white;
+    display: flex;
+    flex: wrap;
+}
+
+.content22 {
+    padding-top: 110px;
+    padding-left: 215px;
+    width: 780px;
+}
+
+.content222 {
+    padding-top: 1px;
+    padding-left: 80px;
+    width: 760px;
+}
+
+.p2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.p3 {
+    font-size: 28px;
+}
+
+#content3 {
+    width: 100%;
+    height: 405px;
+    background-color: black;
+    border-bottom: 8px solid rgb(40, 39, 39);
+    color: white;
+    display: flex;
+    flex: wrap;
+}
+
+.content33 {
+    padding-top: 110px;
+    padding-left: 340px;
+    width: 860px;
+    line-height: 57px;
+}
+
+.content333 {
+    padding-top: 1px;
+    padding-left: 100px;
+    width: 400px;
+}
+
+.p4 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.p5 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+#content4 {
+    width: 100%;
+    height: 33em;
+    background-color: black;
+    border-bottom: 8px solid rgb(40, 39, 39);
+    color: white;
+    display: flex;
+    flex: wrap;
+}
+
+.content44 {
+    padding-top: 180px;
+    padding-left: 215px;
+    width: 780px;
+}
+
+.content444 {
+    padding-top: 50px;
+    padding-left: 80px;
+    width: 760px;
+}
+
+#content5 {
+    width: 100%;
+    height: 485;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex: wrap;
+}
+
+.content55 {
+    padding-top: 110px;
+    padding-left: 340px;
+    width: 840px;
+    line-height: 57px;
+}
+
+.content555 {
+    padding-top: 70px;
+    padding-left: 170px;
+    width: 400px;
+}
+
+.p6 {
+    font-size: 27px;
+    line-height: 32px;
+}
+
+#content6 {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 9%;
+}
+
+.content66 {
+    padding: 70px;
+    width: 62%;
+}
+
+.c61 {
+    font-size: 47px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content7 {
+    width: 100%;
+    height: 0.1em;
+    background-color: black;
+    color: rgb(143, 140, 140);
+    font-size: 0.9em;
+    margin-top: 4em;
+}
+
+.content77 {
+    padding: 1em 1em 1em 5.5em;
+    background-color: black;
+    padding-bottom: 7%;
+}
+
+.content77 a {
+    color: rgb(181, 179, 179);
+}
+
+.inputBar {
+    height: 3.6em;
+    background-color: black;
+    opacity: 0.7;
+    width: 95%;
+    border: 1px solid grey;
+    margin-left: 14%;
+}
+
+.inputBtn {
+    height: 2.8em;
+    width: 9.6em;
+    font-weight: 250;
+    margin-left: -14%;
+}
+
+.inputCon {
+    width: 54%;
+    margin-top: -13%;
+}
+
+.para1 {
+    font-size: 1.1em;
+}
+
+.inputBar:focus {
+    border: 4px solid white;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+    background-color: black;
+}
+
+.inputBar::placeholder {
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.accorHover:hover {
+    background-color: rgb(230, 145, 145);
+}
+
+.mainComponent {
+    margin-top: -2.8%;
+    ;
+}
