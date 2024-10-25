@@ -8,17 +8,12 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'jquery';
-// import "./components/Common.css";
-import { NetflixIndex } from './components/NetflixIndexComponent';
-import FunctionalBased from './components/FunctionalBasedPractice'
-
-
+import DataBindFun from './components/DataBinding1'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <NetflixIndex /> */}
-    <FunctionalBased />
+  <DataBindFun/>
   </React.StrictMode>
 );
 
