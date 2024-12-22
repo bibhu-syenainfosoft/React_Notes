@@ -7,13 +7,13 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import FakeStoreAPI from './components/FakeStoreAPI';
+import FormValidation from './components/FormValidation';
 import 'jquery';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <FakeStoreAPI/>
+  <FormValidation/>
   </React.StrictMode>
 );
 
