@@ -7,13 +7,13 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import FormValidation from './components/FormValidation';
 import 'jquery';
+import FormDataBinding_Formik from './components/FormDataBinding_Formik';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <FormValidation/>
+  <FormDataBinding_Formik/>
   </React.StrictMode>
 );
 
