@@ -8,12 +8,12 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'jquery';
-import FormDataBinding_Formik from './components/FormDataBinding_Formik';
+import LifeCycleHooks_Class from './components/LifeCycleHooks_Class';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <FormDataBinding_Formik/>
+  <LifeCycleHooks_Class/>
   </React.StrictMode>
 );
 

@@ -1,17 +1,33 @@
 import { useFormik } from "formik";
 
-export default function FormDataBinding_Formik() {
+export default function Formik_Validations() {
     const formik = useFormik({
         initialValues: {
             'Username': "",
             "Password": "",
             "City": "",
-            "Stock": true
+            "Stock": true,
+            "Mobile":""
         },
         onSubmit: values => {
-            alert(JSON.stringify(`UserName: ${values.Username}, Password: ${values.Password}, City:${values.City}, Stock:${values.Stock==true?"Available":"Out of Stock"}`));
-        }
+            alert(JSON.stringify(`UserName: ${values.Username}, Password: ${values.Password}, City:${values.City}, Stock:${values.Stock==true?"Available":"Out of Stock"}, Mobile:${values.Mobile}`));
+        },
+        validate:validateForm
     })
+
+    function validateForm(values){
+        const err={};
+        if(values.Username==""){
+            err.Username = 'UserName Required';
+        }
+        if(values.Mobile.match(/\+91\d{10}/)){
+            err.Mobile = "";   
+        }
+        else{
+            err.Mobile = "Invalid Mobile Number"; 
+        }
+        return err;
+    }
 
     return (
         <div>
@@ -24,6 +40,18 @@ export default function FormDataBinding_Formik() {
                             name="Username" value={formik.values.Username}
                             className="w-25 form-control"
                         />
+                        <p className="text-danger">{formik.errors.Username}</p>
+                    </dt>
+                </div>
+                <div>
+                    <dl>Mobile</dl>
+                    <dt>
+                        <input 
+                            type="text" onChange={formik.handleChange}
+                            name="Mobile" value={formik.values.Mobile}
+                            className="w-25 form-control" placeholder="+91"
+                        />
+                        <p class="text-danger">{formik.errors.Mobile}</p>
                     </dt>
                 </div>
                 <div>
