@@ -8,12 +8,12 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'jquery';
-import LifeCycleHooks_Class from './components/LifeCycleHooks_Class';
+import CustomHook2 from './components/CustomHook2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <LifeCycleHooks_Class/>
+  <CustomHook2/>
   </React.StrictMode>
 );
 
