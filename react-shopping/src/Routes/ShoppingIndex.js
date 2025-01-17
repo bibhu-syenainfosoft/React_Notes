@@ -1,33 +1,52 @@
-import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
-import AxiosDemo from '../components/AxiosDemo'
-import LoginComponent from '../components/LoginComponent'
-import Formik_YUP from '../components/Formik_YUP'
-import FormValidations from '../components/FormValidation'
-import FakeStoreAPI from '../components/FakeStoreAPI'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-export default function ShoppingIndex(){
-  
-    return(
+export default function ShoppingIndex() {
+
+    return (
         <div>
             <h3>Shopping Index</h3>
-          <Router>
-          <ol>
-                <li> <Link to='/login'>Login</Link> </li>
-                <li> <Link to='/roleList'>Roles List</Link> </li>
-                <li> <Link to='/products'>Products</Link> </li>
-                <li> <Link to='/register1'>Register1</Link> </li>
-                <li> <Link to='/register2'>Register2</Link> </li>
-            </ol>
-            <hr/>
-            <Routes>
-                <Route path='/login' element={<LoginComponent/>}/>
-                <Route path='/roleList' element={<AxiosDemo/>}/>
-                <Route path='/products' element={<FakeStoreAPI/>}/>
-                <Route path='/register1' element={<Formik_YUP/>}/>
-                <Route path='/register2' element={<FormValidations/>}/>
-                
-            </Routes>
-          </Router>
+            <Router>
+                <ol>
+                    <li> <Link to='/html'>HTML</Link> </li>
+                    <li> <Link to='/css'>CSS</Link> </li>
+                    <li> <Link to='/js'>Javascript</Link> </li>
+                </ol>
+                <hr />
+                <Routes>
+                    <Route path='html' element={
+                        <div>
+                            <h2><u>HTML</u></h2>
+                            <h3>Welcome to HTML</h3>
+                            <p>It is a markup language</p>
+                        </div>
+                    } />
+                    <Route path='/css' element={
+                        <div>
+                            <h2><u>CSS</u></h2>
+                            <h3>Welcome to CSS</h3>
+                            <p>It is Used for styling the web page</p>
+                        </div>
+                    } />
+                    <Route path='/js' element={
+                        <div>
+                            <h2><u>Javascript</u></h2>
+                            <h3>Welcome to Javascript</h3>
+                            <p>It is a Scripting language</p>
+                        </div>
+                    } />
+                    <Route path='/' element={
+                        <div>
+                            <h2>Welcome to Web Designing</h2>
+                        </div>
+                    } />
+                    <Route path='*' element={
+                        <div>
+                           <p className='text-danger'>Not Found: The page that you requested that is not available.</p> 
+                        </div>
+                    } />
+
+                </Routes>
+            </Router>
         </div>
     )
 
