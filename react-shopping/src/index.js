@@ -8,12 +8,11 @@ import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'jquery';
-import CustomHook2 from './components/CustomHook2';
-
+import ShoppingIndex from './Routes/ShoppingIndex';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <CustomHook2/>
+  <ShoppingIndex/>
   </React.StrictMode>
 );
 

@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import {useCookies} from 'react-cookie';
-import { useCaptcha } from '../hooks/captchaHook';
-
-export default function CustomHook2() {
+export default function LoginComponent() {
    const [cookies,setCookie,removeCookie]=useCookies(['username']);
    const [userDetails,setUserDetails] =  useState({userName:'',Password:''});
-   const {code} = useCaptcha();
+
 
     function handleUserChange(e) {
         setUserDetails({
@@ -39,10 +37,6 @@ export default function CustomHook2() {
                     <dl>
                         <dd>Password</dd>
                         <dt><input type="password" onChange={handlePwdChange} /></dt>
-                    </dl>
-                    <dl>
-                        <dd>Captcha</dd>
-                        <dt>{code}</dt>
                     </dl>
                 <br />
                     <div><button className="btn btn-outline-primary" onClick={handleLoginClick}>Login</button></div><br />
