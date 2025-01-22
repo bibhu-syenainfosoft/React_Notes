@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ProductComponent } from './components/ProductComponent';
+import { RoleComponent } from './components/RoleComponent';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <ProductComponent />
+    <RoleComponent />
   </React.StrictMode>
 );
 
